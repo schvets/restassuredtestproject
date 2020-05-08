@@ -1,0 +1,16 @@
+target
+reports
+target/
+.project
+.classpath
+.settings
+*.log
+gensrc
+bin/
+build/
+files/runtime/
+.idea
+.iml
+.gradle
+*.iml
+local.properties

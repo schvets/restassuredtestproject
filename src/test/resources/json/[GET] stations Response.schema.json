@@ -1,0 +1,113 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1588834597.json", 
+	"title": "Root", 
+	"type": "array",
+	"default": [],
+	"items":{
+		"$id": "#root/items", 
+		"title": "Items", 
+		"type": "object",
+		"required": [
+			"id",
+			"created_at",
+			"updated_at",
+			"external_id",
+			"name",
+			"longitude",
+			"latitude",
+			"altitude",
+			"rank"
+		],
+		"properties": {
+			"id": {
+				"$id": "#root/items/id", 
+				"title": "Id", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"583436dd9643a9000196b8d6"
+				],
+				"pattern": "^.*$"
+			},
+			"created_at": {
+				"$id": "#root/items/created_at", 
+				"title": "Created_at", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"2016-11-22T12:15:25.967Z"
+				],
+				"pattern": "^.*$"
+			},
+			"updated_at": {
+				"$id": "#root/items/updated_at", 
+				"title": "Updated_at", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"2016-11-22T12:15:25.967Z"
+				],
+				"pattern": "^.*$"
+			},
+			"external_id": {
+				"$id": "#root/items/external_id", 
+				"title": "External_id", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"SF_TEST001"
+				],
+				"pattern": "^.*$"
+			},
+			"name": {
+				"$id": "#root/items/name", 
+				"title": "Name", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"San Francisco Test Station"
+				],
+				"pattern": "^.*$"
+			},
+			"longitude": {
+				"$id": "#root/items/longitude", 
+				"title": "Longitude", 
+				"type": "number",
+				"examples": [
+					-122.43
+				],
+				"default": 0.0
+			},
+			"latitude": {
+				"$id": "#root/items/latitude", 
+				"title": "Latitude", 
+				"type": "number",
+				"examples": [
+					37.76
+				],
+				"default": 0.0
+			},
+			"altitude": {
+				"$id": "#root/items/altitude", 
+				"title": "Altitude", 
+				"type": "integer",
+				"examples": [
+					150
+				],
+				"default": 0
+			},
+			"rank": {
+				"$id": "#root/items/rank", 
+				"title": "Rank", 
+				"type": "integer",
+				"examples": [
+					0
+				],
+				"default": 0
+			}
+		}
+	}
+
+}

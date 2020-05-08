@@ -1,0 +1,127 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1588834162.json", 
+	"title": "Root", 
+	"type": "array",
+	"default": [],
+	"items":{
+		"$id": "#root/items", 
+		"title": "Items", 
+		"type": "object",
+		"required": [
+			"station_id",
+			"dt",
+			"temperature",
+			"wind_speed",
+			"wind_gust",
+			"pressure",
+			"humidity",
+			"rain_1h",
+			"clouds"
+		],
+		"properties": {
+			"station_id": {
+				"$id": "#root/items/station_id", 
+				"title": "Station_id", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"583436dd9643a9000196b8d6"
+				],
+				"pattern": "^.*$"
+			},
+			"dt": {
+				"$id": "#root/items/dt", 
+				"title": "Dt", 
+				"type": "integer",
+				"examples": [
+					1479817340
+				],
+				"default": 0
+			},
+			"temperature": {
+				"$id": "#root/items/temperature", 
+				"title": "Temperature", 
+				"type": "number",
+				"examples": [
+					18.7
+				],
+				"default": 0.0
+			},
+			"wind_speed": {
+				"$id": "#root/items/wind_speed", 
+				"title": "Wind_speed", 
+				"type": "number",
+				"examples": [
+					1.2
+				],
+				"default": 0.0
+			},
+			"wind_gust": {
+				"$id": "#root/items/wind_gust", 
+				"title": "Wind_gust", 
+				"type": "number",
+				"examples": [
+					3.4
+				],
+				"default": 0.0
+			},
+			"pressure": {
+				"$id": "#root/items/pressure", 
+				"title": "Pressure", 
+				"type": "integer",
+				"examples": [
+					1021
+				],
+				"default": 0
+			},
+			"humidity": {
+				"$id": "#root/items/humidity", 
+				"title": "Humidity", 
+				"type": "integer",
+				"examples": [
+					87
+				],
+				"default": 0
+			},
+			"rain_1h": {
+				"$id": "#root/items/rain_1h", 
+				"title": "Rain_1h", 
+				"type": "integer",
+				"examples": [
+					2
+				],
+				"default": 0
+			},
+			"clouds": {
+				"$id": "#root/items/clouds", 
+				"title": "Clouds", 
+				"type": "array",
+				"default": [],
+				"items":{
+					"$id": "#root/items/clouds/items", 
+					"title": "Items", 
+					"type": "object",
+					"required": [
+						"condition"
+					],
+					"properties": {
+						"condition": {
+							"$id": "#root/items/clouds/items/condition", 
+							"title": "Condition", 
+							"type": "string",
+							"default": "",
+							"examples": [
+								"NSC"
+							],
+							"pattern": "^.*$"
+						}
+					}
+				}
+
+			}
+		}
+	}
+
+}

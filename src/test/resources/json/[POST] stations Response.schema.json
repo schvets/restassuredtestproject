@@ -1,0 +1,117 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1588834119.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"ID",
+		"updated_at",
+		"created_at",
+		"user_id",
+		"external_id",
+		"name",
+		"latitude",
+		"longitude",
+		"altitude",
+		"source_type"
+	],
+	"properties": {
+		"ID": {
+			"$id": "#root/ID", 
+			"title": "Id", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"583436dd9643a9000196b8d6"
+			],
+			"pattern": "^.*$"
+		},
+		"updated_at": {
+			"$id": "#root/updated_at", 
+			"title": "Updated_at", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"2016-11-22T12:15:25.96727176Z"
+			],
+			"pattern": "^.*$"
+		},
+		"created_at": {
+			"$id": "#root/created_at", 
+			"title": "Created_at", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"2016-11-22T12:15:25.967271732Z"
+			],
+			"pattern": "^.*$"
+		},
+		"user_id": {
+			"$id": "#root/user_id", 
+			"title": "User_id", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"557066d0ff7a7e3897531d94"
+			],
+			"pattern": "^.*$"
+		},
+		"external_id": {
+			"$id": "#root/external_id", 
+			"title": "External_id", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"SF_TEST001"
+			],
+			"pattern": "^.*$"
+		},
+		"name": {
+			"$id": "#root/name", 
+			"title": "Name", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"San Francisco Test Station"
+			],
+			"pattern": "^.*$"
+		},
+		"latitude": {
+			"$id": "#root/latitude", 
+			"title": "Latitude", 
+			"type": "number",
+			"examples": [
+				37.76
+			],
+			"default": 0.0
+		},
+		"longitude": {
+			"$id": "#root/longitude", 
+			"title": "Longitude", 
+			"type": "number",
+			"examples": [
+				-122.43
+			],
+			"default": 0.0
+		},
+		"altitude": {
+			"$id": "#root/altitude", 
+			"title": "Altitude", 
+			"type": "integer",
+			"examples": [
+				150
+			],
+			"default": 0
+		},
+		"source_type": {
+			"$id": "#root/source_type", 
+			"title": "Source_type", 
+			"type": "integer",
+			"examples": [
+				5
+			],
+			"default": 0
+		}
+	}
+}

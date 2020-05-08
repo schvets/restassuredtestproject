@@ -1,0 +1,225 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1588834324.json", 
+	"title": "Root", 
+	"type": "array",
+	"default": [],
+	"items":{
+		"$id": "#root/items", 
+		"title": "Items", 
+		"type": "object",
+		"required": [
+			"type",
+			"date",
+			"station_id",
+			"temp",
+			"humidity",
+			"wind",
+			"pressure",
+			"precipitation"
+		],
+		"properties": {
+			"type": {
+				"$id": "#root/items/type", 
+				"title": "Type", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"m"
+				],
+				"pattern": "^.*$"
+			},
+			"date": {
+				"$id": "#root/items/date", 
+				"title": "Date", 
+				"type": "integer",
+				"examples": [
+					1480508280
+				],
+				"default": 0
+			},
+			"station_id": {
+				"$id": "#root/items/station_id", 
+				"title": "Station_id", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"583d7bbbebb3ff000123f1ce"
+				],
+				"pattern": "^.*$"
+			},
+			"temp": {
+				"$id": "#root/items/temp", 
+				"title": "Temp", 
+				"type": "object",
+				"required": [
+					"max",
+					"min",
+					"average",
+					"weight"
+				],
+				"properties": {
+					"max": {
+						"$id": "#root/items/temp/max", 
+						"title": "Max", 
+						"type": "number",
+						"examples": [
+							22.7
+						],
+						"default": 0.0
+					},
+					"min": {
+						"$id": "#root/items/temp/min", 
+						"title": "Min", 
+						"type": "number",
+						"examples": [
+							21.7
+						],
+						"default": 0.0
+					},
+					"average": {
+						"$id": "#root/items/temp/average", 
+						"title": "Average", 
+						"type": "number",
+						"examples": [
+							22.03
+						],
+						"default": 0.0
+					},
+					"weight": {
+						"$id": "#root/items/temp/weight", 
+						"title": "Weight", 
+						"type": "integer",
+						"examples": [
+							3
+						],
+						"default": 0
+					}
+				}
+			}
+,
+			"humidity": {
+				"$id": "#root/items/humidity", 
+				"title": "Humidity", 
+				"type": "object",
+				"required": [
+					"average",
+					"weight"
+				],
+				"properties": {
+					"average": {
+						"$id": "#root/items/humidity/average", 
+						"title": "Average", 
+						"type": "number",
+						"examples": [
+							76.33
+						],
+						"default": 0.0
+					},
+					"weight": {
+						"$id": "#root/items/humidity/weight", 
+						"title": "Weight", 
+						"type": "integer",
+						"examples": [
+							3
+						],
+						"default": 0
+					}
+				}
+			}
+,
+			"wind": {
+				"$id": "#root/items/wind", 
+				"title": "Wind", 
+				"type": "object",
+				"required": [
+					"deg",
+					"speed"
+				],
+				"properties": {
+					"deg": {
+						"$id": "#root/items/wind/deg", 
+						"title": "Deg", 
+						"type": "integer",
+						"examples": [
+							160
+						],
+						"default": 0
+					},
+					"speed": {
+						"$id": "#root/items/wind/speed", 
+						"title": "Speed", 
+						"type": "number",
+						"examples": [
+							3.3
+						],
+						"default": 0.0
+					}
+				}
+			}
+,
+			"pressure": {
+				"$id": "#root/items/pressure", 
+				"title": "Pressure", 
+				"type": "object",
+				"required": [
+					"min",
+					"max",
+					"average",
+					"weight"
+				],
+				"properties": {
+					"min": {
+						"$id": "#root/items/pressure/min", 
+						"title": "Min", 
+						"type": "integer",
+						"examples": [
+							1031
+						],
+						"default": 0
+					},
+					"max": {
+						"$id": "#root/items/pressure/max", 
+						"title": "Max", 
+						"type": "integer",
+						"examples": [
+							1033
+						],
+						"default": 0
+					},
+					"average": {
+						"$id": "#root/items/pressure/average", 
+						"title": "Average", 
+						"type": "number",
+						"examples": [
+							1031.67
+						],
+						"default": 0.0
+					},
+					"weight": {
+						"$id": "#root/items/pressure/weight", 
+						"title": "Weight", 
+						"type": "integer",
+						"examples": [
+							3
+						],
+						"default": 0
+					}
+				}
+			}
+,
+			"precipitation": {
+				"$id": "#root/items/precipitation", 
+				"title": "Precipitation", 
+				"type": "object",
+				"required": [
+				],
+				"properties": {
+				}
+			}
+
+		}
+	}
+
+}

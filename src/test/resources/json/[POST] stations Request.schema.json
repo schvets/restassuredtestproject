@@ -1,0 +1,63 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://example.com/object1588913810.json",
+    "title": "Root",
+    "type": "object",
+    "required": [
+        "external_id",
+        "name",
+        "latitude",
+        "longitude",
+        "altitude"
+    ],
+    "properties": {
+        "external_id": {
+            "$id": "#root/external_id",
+            "title": "External_id",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "SF_TEST001"
+            ],
+            "pattern": "^.*$"
+        },
+        "name": {
+            "$id": "#root/name",
+            "title": "Name",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "San Francisco Test Station"
+            ],
+            "pattern": "^.*$"
+        },
+        "latitude": {
+            "$id": "#root/latitude",
+            "title": "Latitude",
+            "type": "number",
+            "examples": [
+                37.76
+            ],
+            "default": 0.0
+        },
+        "longitude": {
+            "$id": "#root/longitude",
+            "title": "Longitude",
+            "type": "number",
+            "examples": [
+                -122.43
+            ],
+            "default": 0.0
+        },
+        "altitude": {
+            "$id": "#root/altitude",
+            "title": "Altitude",
+            "type": "integer",
+            "examples": [
+                150
+            ],
+            "default": 0
+        }
+    }
+}
