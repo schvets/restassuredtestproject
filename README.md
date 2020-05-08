@@ -16,6 +16,8 @@ b) In tests, it is necessary to check the response codes and the content returne
 
 c) Create POJO response objects manually
 
+d) Tests should located in package ${projectDir}\src\test\java\currentWeather
+
 
 **2.** Test Openweathermap API (https://openweathermap.org/stations)
 
@@ -26,6 +28,8 @@ a) Should be covered by CRUD operations (7 endpoints)
 b) generate POJO objects with a command
  ```mvn properties:read-project-properties org.jsonschema2pojo:jsonschema2pojo-maven-plugin:generate```
  
+c) Tests should located in package ${projectDir}\src\test\java\stations
+
  
  **3.** Test Calculator API (https://openweathermap.org/stations)
  
@@ -33,4 +37,6 @@ a) Should be covered 4 endpoints
 
 b) generate POJO objects with a command
  ```mvn properties:read-project-properties jaxws:wsimport```
+
+c) Tests should located in package ${projectDir}\src\test\java\calculator
 
