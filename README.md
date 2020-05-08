@@ -22,7 +22,7 @@ d) Tests should located in package ${projectDir}\src\test\java\currentWeather
 **2.** Test Openweathermap API (https://openweathermap.org/stations)
 
 Requirements:
- 
+
 a) Should be covered by CRUD operations (7 endpoints)
 
 b) generate POJO objects with a command
@@ -31,8 +31,10 @@ b) generate POJO objects with a command
 c) Tests should located in package ${projectDir}\src\test\java\stations
 
  
- **3.** Test Calculator API (http://www.dneonline.com/calculator.asmx)
- 
+ **3.** Test Calculator API (http://www.dneonline.com/calculator.asmx) 
+
+Requirements:
+
 a) Should be covered 4 endpoints
 
 b) generate POJO objects with a command
