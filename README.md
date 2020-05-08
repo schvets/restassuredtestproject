@@ -31,7 +31,7 @@ b) generate POJO objects with a command
 c) Tests should located in package ${projectDir}\src\test\java\stations
 
  
- **3.** Test Calculator API (https://openweathermap.org/stations)
+ **3.** Test Calculator API (http://www.dneonline.com/calculator.asmx)
  
 a) Should be covered 4 endpoints
 
